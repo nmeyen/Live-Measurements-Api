@@ -1,0 +1,47 @@
+{
+  "info": {
+    "name": "Measurements API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "POST /measurements",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "front_image",
+              "type": "file",
+              "src": "front.jpg"
+            },
+            {
+              "key": "side_image",
+              "type": "file",
+              "src": "side.jpg"
+            },
+            {
+              "key": "user_height_cm",
+              "type": "text",
+              "value": "170"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:5000/measurements",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "measurements"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
